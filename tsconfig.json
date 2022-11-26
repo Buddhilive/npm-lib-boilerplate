@@ -1,13 +1,17 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
-    "sourceMap": true,
-    "noImplicitAny": true,
-    "module": "es6",
-    "target": "es6",
+    "lib": ["es6", "es2021", "esnext"],
+    "target": "es2021",
+    "module": "es2022",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "declaration": true,
+    "declarationMap": true,
+    "inlineSources": true,
     "allowJs": true,
-    "declaration": true
+    "noImplicitAny": true,
+    "sourceMap": true
   },
   "include": ["src/**/*"],
-  "exclude": ["test/**/*"]
+  "exclude": ["node_modules", "dist/**/*"]
 }
